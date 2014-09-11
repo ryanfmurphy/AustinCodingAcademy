@@ -52,10 +52,10 @@ Additionally, calculate and print how many years apart you and the user are in
 age. You may assume the age provided by the user is a valid integer.
 
 2) Write a program that prompts the user for a number and determines if that
-number was an integer or floating point. You may assume that the number provided
+number was a whole number. You may assume that the number provided
 by the user is numeric (you don't need to account for random strings like
 'Hello'), but you may only use the functions float() and int() in your logic for
-determining if the value is an integer or floating point.
+determining if the value is a whole number.
 
 Hint: Observe the following shell session
 
