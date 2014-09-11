@@ -4,27 +4,27 @@ Python course - Assignment 1
 Conceptual
 ----------
 
-1. List all three possible scenarios in which the following statement is false:
+1) List all three possible scenarios in which the following statement is false:
 
     "It's cold and wet outside"
 
-2. If the expression `not True` evaluates to False, and the expression `not
+2) If the expression `not True` evaluates to False, and the expression `not
 False` evaluates to True, what is the value of `not not True`? What is the value
 of `not not False`?
 
-3. Provide three real world scenarios where a while loop would be appropriate
+3) Provide three real world scenarios where a while loop would be appropriate
 
-4. Explain the difference between the following values:
+4) Explain the difference between the following values:
 
     10
     "10"
 
-5. Explain the difference between the following values:
+5) Explain the difference between the following values:
 
     10
     10.0
 
-6. When you assign an integer to a variable in Python, the computer internally
+6) When you assign an integer to a variable in Python, the computer internally
 stores the integer value in a specific format that allows us to perform math
 operations between the value and other integers. However, the computer has a
 limit to what size integer it can store. For example, A 32bit operating system
@@ -38,7 +38,7 @@ type of number?
 Hint: Count the number of digits in the numbers provided. What other numbers do
 you commonly see with this exact number of digits?
 
-7. Explain in your own words what returning a value from a function does.
+7) Explain in your own words what returning a value from a function does.
 Provide an example of when you would want a function to return a value, and
 provide an example of when a return value is not necessary.
 
@@ -46,12 +46,12 @@ provide an example of when a return value is not necessary.
 Programs
 --------
 
-1. Write a program that prompts the user for their first name, last name, age,
+1) Write a program that prompts the user for their first name, last name, age,
 and gender. Print a welcome message which includes their provided information.
 Additionally, calculate and print how many years apart you and the user are in
 age. You may assume the age provided by the user is a valid integer.
 
-2. Write a program that prompts the user for a number and determines if that
+2) Write a program that prompts the user for a number and determines if that
 number was an integer or floating point. You may assume that the number provided
 by the user is numeric (you don't need to account for random strings like
 'Hello'), but you may only use the functions float() and int() in your logic for
@@ -66,7 +66,7 @@ Hint: Observe the following shell session
     >>> 2.0 == 2
     True
 
-3. Your manager orders Austin's Pizza every Friday for you and your fellow
+3) Your manager orders Austin's Pizza every Friday for you and your fellow
 coworkers. You're getting tired of figuring out how many pizzas you need to buy,
 so you decide to automate the process. You're also getting tired of Austin's
 Pizza and would prefer East Side Pies, but complaining about free food doesn't
@@ -75,7 +75,7 @@ number of people eating, the number of slices each will eat, and the number of
 slices per box of pizza. The program should print out the minimum number of
 pizza boxes necessary to feed the office based on the values provided.
 
-4. FizzBuzz is a classic technical interview problem. Complete the exercise as
+4) FizzBuzz is a classic technical interview problem. Complete the exercise as
 stated below:
 
     Write a program that prints the numbers from 1 to 100. But for multiples of
@@ -83,7 +83,7 @@ stated below:
     'Buzz' For numbers which are multiples of both three and five print
     'FizzBuzz'
 
-5. Fortune cookie ASCII frame
+5) Fortune cookie ASCII frame
 
 ### PART 1
 
