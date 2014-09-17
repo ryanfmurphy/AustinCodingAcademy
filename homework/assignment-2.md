@@ -8,7 +8,7 @@ Conceptual
 the contents of a file as opposed to asking the user directly for input.
 
 2) You are designing the next greatest PC game, HarmVille. HarmVille
-is like FarmVille, but with Grand Theft Auto twist. When a user installs
+is like FarmVille, but with a Grand Theft Auto twist. When a user installs
 the game, they are given a choice of what directory they would like to
 install the game. On Windows operating systems, this defaults to
 C:\Program Files, but the user is free to choose any directory. The directory
