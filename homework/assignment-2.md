@@ -279,7 +279,7 @@ The user should be given the option to save this information to a local file.
 	import json
 
 	def get_geo_data():
-		resp = urllib2.urlopen('https://freegeoip.net/json/')
+		resp = urllib2.urlopen('http://freegeoip.net/json/')
 		data = json.load(resp)   
 		return data
 
