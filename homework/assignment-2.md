@@ -57,7 +57,8 @@ remedy this problem?
 	4) append
 
 7) A set is a data structure similar to a list, but the elements of a set
-have no concept of order. However, evaluating if a set contains a specific
+have no concept of order, and each element of a set is unique (unlike lists, which
+can contain duplicate values). However, evaluating if a set contains a specific
 value is much faster than evaluating if a list contains a specific value.
 Describe a scenario that would be a good use case for a set, and explain
 why you would choose using a set over using a list. Similarly, describe a
