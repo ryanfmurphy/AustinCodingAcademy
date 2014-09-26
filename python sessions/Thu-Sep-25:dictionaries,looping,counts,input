@@ -1,0 +1,179 @@
+# ... lost the beginning of this one, sorry guys!
+# ...
+>>> L[3]
+'Schmadalupe'
+>>> L.index('Schmadalupe')
+3
+>>> L.index('Guadalupe') # it's changed, Guadalupe is no longer there
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'Guadalupe' is not in list
+>>> L = range(10) # getting rid of our list now and just having 0-9
+>>> L
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> # Question: can we go through a loop and change the L[4] to zebra?
+... 
+>>> L[4] = 'zebra' # too easy?
+>>> # it works...guess we didn't need a loop
+... 
+>>> L
+[0, 1, 2, 3, 'zebra', 5, 6, 7, 8, 9]
+>>> # Question: how to modify every 3rd element?
+... 
+>>> enumerate(L)  # enter the enumerate function, gives us indexes and values
+<enumerate object at 0x109d5c5a0>
+>>> list(_) # have to convert it to a list to see what's inside
+[(0, 0), (1, 1), (2, 2), (3, 3), (4, 'zebra'), (5, 5), (6, 6), (7, 7), (8, 8), (9, 9)]
+# it has these tuples in it, (index,value) pairs
+>>> for i,v in enumerate(L): print "i =",i,"v =",v
+... 
+i = 0 v = 0
+i = 1 v = 1
+i = 2 v = 2
+i = 3 v = 3
+i = 4 v = zebra
+i = 5 v = 5
+i = 6 v = 6
+i = 7 v = 7
+i = 8 v = 8
+i = 9 v = 9
+>>> for (i,v) in enumerate(L): print "i =",i,"v =",v # (i,v) is ok too
+... 
+i = 0 v = 0
+i = 1 v = 1
+i = 2 v = 2
+i = 3 v = 3
+i = 4 v = zebra
+i = 5 v = 5
+i = 6 v = 6
+i = 7 v = 7
+i = 8 v = 8
+i = 9 v = 9
+>>> # now we are going to modify every 3rd element to "fizz"
+... 
+>>> L
+[0, 1, 2, 3, 'zebra', 5, 6, 7, 8, 9]
+>>> for i,v in enumerate(L):
+...     if i % 3 == 0: L[i] = 'fizz'
+... 
+>>> L
+['fizz', 1, 2, 'fizz', 'zebra', 5, 'fizz', 7, 8, 'fizz']
+>>> # success!
+... 
+>>> L
+['fizz', 1, 2, 'fizz', 'zebra', 5, 'fizz', 7, 8, 'fizz']
+>>> L[::2]
+['fizz', 2, 'zebra', 'fizz', 8]
+
+>>> # another way to modify every 3rd one:
+... 
+>>> range(0,10,3)
+[0, 3, 6, 9]
+>>> for i in range(0,len(L),3): L[i] = 'frazz'
+... 
+>>> L
+['frazz', 1, 2, 'frazz', 'zebra', 5, 'frazz', 7, 8, 'frazz']
+>>> # see, it changed them that way, too
+>>> range(0,len(L),3) # step by 3's
+[0, 3, 6, 9]
+>>> L[::3]
+['frazz', 'frazz', 'frazz', 'frazz']
+>>> # this L[::3] notation also steps by 3.  L[1::3] is step by 3 offset by 1:
+>>> L[1::3]
+[1, 'zebra', 7]
+... 
+>>> 
+>>> # review of how to use dictionaries 
+... 
+>>> animals_weights = {'elephant':'fat', 'mouse':'light', 'zebra':'medium'}
+>>> animals_weights['elephant']    # simple lookup
+'fat'
+>>> 
+>>> # kind of like a list, but the indexes (aka "keys") can be strings
+>>> # what if I wanted to go the other direction, see which animal is fat?
+>>> # harder...
+>>> for i in animals_weights: print i
+... 
+mouse
+zebra
+elephant
+>>> for i in animals_weights: print animals_weights[i]
+... 
+light
+medium
+fat
+>>> for i in animals_weights:
+...     if animals_weights[i] == 'fat': print i
+... 
+elephant
+>>> # we also have something similar to enumerate() for a dict: D.items()
+... 
+>>> animals_weights.items()
+[('mouse', 'light'), ('zebra', 'medium'), ('elephant', 'fat')]
+>>> for k,v in animals_weights.items():
+...     print 'k=',k, 'v=',v
+... 
+k= mouse v= light
+k= zebra v= medium
+k= elephant v= fat
+>>> bigL = range(10000000)
+>>> bigL.index(500000)
+500000
+>>> bigL = range(10000000000)
+^C        
+>>> # oops we died
+
+...
+
+Last login: Thu Sep 25 19:38:39 on ttys013
+Lshape:~ murftown$ python
+Python 2.7.2 (default, Jun 20 2012, 16:23:33) 
+[GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+... 
+>>> # talking about HW1 programming problem 1: mean, median, mode
+>>> # how to get the mode?  how to count the number of occurrences?
+>>> # (incomplete)
+>>> L = [3,2,3,7,5,5,1]
+>>> L.count(1)
+1
+>>> L.count(5)
+2
+>>> counts = [L.count(x) for x in L]
+>>> counts
+[2, 1, 2, 1, 2, 2, 1]
+>>> counts = {x : L.count(x) for x in L}
+>>> counts
+{1: 1, 2: 1, 3: 2, 5: 2, 7: 1}
+>>> counts.values
+<built-in method values of dict object at 0x7f9d6bc77560>
+>>> counts.values()
+[1, 1, 2, 2, 1]
+>>> counts.items()
+[(1, 1), (2, 1), (3, 2), (5, 2), (7, 1)]
+>>> sorted(_)
+[(1, 1), (2, 1), (3, 2), (5, 2), (7, 1)]
+>>> counts.items() # what if we want to reverse these so we can sort by the 2nd
+[(1, 1), (2, 1), (3, 2), (5, 2), (7, 1)]
+>>> swapped = [(y,x) for x,y in counts.items()]
+>>> # this approach is different from the solution I posted on GitHub.
+>>> swapped
+[(1, 1), (1, 2), (2, 3), (2, 5), (1, 7)]
+>>> sorted(swapped)
+[(1, 1), (1, 2), (1, 7), (2, 3), (2, 5)]
+>>> sorted_swapped = _
+>>> max_count = sorted_swapped[-1][0]
+>>> max_count
+2
+>>> [x for x in sorted_swapped if x[0] == max_count]
+[(2, 3), (2, 5)]
+>>> # why is input() different from raw_input()? because it runs your input as code!
+>>> input()
+3 + 3
+6
+>>> # it's very dangerous to use input() because it evaluates Python code
+... 
+>>> # use raw_input instead!
+... 
+>>> 
+
