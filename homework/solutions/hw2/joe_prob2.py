@@ -2,12 +2,14 @@ def get_nonwhitespace_chars(opened_file, num_chars):
     valid_chars = ''
     num_valid_chars = 0
 
-    c = opened_file.read(1)
-    while c and num_valid_chars < num_chars:
+    while num_valid_chars < num_chars:
+        c = opened_file.read(1)
+        if not c:
+            break
+
         if not c.isspace():
             valid_chars += c
             num_valid_chars += 1
-        c = opened_file.read(1)
 
     return valid_chars
 
