@@ -72,11 +72,6 @@ with a data point, whereas lists can use indexes.
 import urllib2
 
 def save_webpage(url,download_path):
-    '''
-    This function attempts to download the web page at the url specified
-    in the `x` argument. The function saves the web page to the file path
-    specified by the `y` argument.
-    '''
     html = urllib2.urlopen(x).read()
     with open(download_path, 'w') as f:
         f.write(html)
