@@ -160,3 +160,20 @@ data:
 * `"street_address"`
 * `{ "lat" : 37.42291810, "lng" : -122.08542120 }`
 * `37.42291810`
+
+Programming
+-----------
+
+Before we start on problems, play around with the following function. It allows
+you to send a text message to `to_num` with the text `txt_msg`. This function
+uses my personal SMS relay which uses the Twilio API. I will only have it open
+for use by ACA students for a short period of time!
+
+    import json
+    import urllib2
+
+    def send_text_msg(to_num, txt_msg):
+        url = 'http://opensms.joequery.me/sms'
+        data = json.dumps({'to': to_num, 'body': txt_msg})
+        request = urllib2.Request(url, data, {'Content-Type': 'application/json'})
+        return urllib2.urlopen(request).read()
