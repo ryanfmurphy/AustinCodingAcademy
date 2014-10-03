@@ -177,3 +177,40 @@ for use by ACA students for a short period of time!
         data = json.dumps({'to': to_num, 'body': txt_msg})
         request = urllib2.Request(url, data, {'Content-Type': 'application/json'})
         return urllib2.urlopen(request).read()
+
+We're going to build a sysadmin tool that alerts us when a website we're
+managing goes down.
+
+The components to this tool are:
+
+* Determining if a website is responding correctly
+* Using time.sleep() to periodically check the web page instead of checking it
+  as fast as possible.
+* Sending a text message and stopping the program if the website is found to be
+  unresponsive.
+
+Each problem should be contained in its own file.
+
+### Problem 1
+
+Create a function that takes a webpage url and a datetime object as an argument,
+and returns a string in the form
+
+"Alert! http://joequery.me went down at 10:05AM on 10/2/2014"
+
+In the file, provide some calls to your functions with different datetime
+objects and web pages.
+
+For example,
+
+    import datetime
+
+    def get_alert_str(url, dt):
+        ### your function code here
+
+    now = datetime.datetime.now()
+    print(get_alert_str('www.google.com', now))
+
+    tomorrow = now + datetime.timedelta(days=1)
+    print(get_alert_str('www.facebook.com', tomorrow))
+
