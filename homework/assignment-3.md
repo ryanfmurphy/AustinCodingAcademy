@@ -214,3 +214,14 @@ For example,
     tomorrow = now + datetime.timedelta(days=1)
     print(get_alert_str('www.facebook.com', tomorrow))
 
+### Problem 2
+
+A note on exceptions:
+
+Sometimes situations occur during a program's runtime that the computer cannot
+make a decision on what to do next. For example, what if you try to open a file
+for reading that does not exist? The computer cannot decide the best course of
+action - that's up to you. Do you want to try a different file? Do you want to
+stop the program? There are so many options that the computer is forced to
+declare it doesn't know how to handle the situation. This "I don't know what to
+do!" declaration is called an Exception.
