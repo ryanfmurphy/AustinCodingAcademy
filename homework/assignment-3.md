@@ -406,7 +406,8 @@ Here are some helper functions you should use in the assignment:
 The following function will help emulate a website randomly going down. Pass in the
 normal url you want to check as an argument. 70% of the time the function will return
 the provided url. The other 30% it will return an httpbin url that results in a 500
-error code.
+error code. While this function should not be in the final product, you should use it
+to test your program's correctness.
 
 	>>> def emulate_random_meltdown(url):
 	...     error_url = "http://httpbin.org/status/500"
