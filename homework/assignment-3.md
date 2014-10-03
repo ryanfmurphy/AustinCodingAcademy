@@ -214,9 +214,7 @@ For example,
     tomorrow = now + datetime.timedelta(days=1)
     print(get_alert_str('www.facebook.com', tomorrow))
 
-### Problem 2
-
-A note on exceptions:
+### A note on exceptions:
 
 Sometimes situations occur during a program's runtime that the computer cannot
 make a decision on what to do next. For example, what if you try to open a file
@@ -225,3 +223,215 @@ action - that's up to you. Do you want to try a different file? Do you want to
 stop the program? There are so many options that the computer is forced to
 declare it doesn't know how to handle the situation. This "I don't know what to
 do!" declaration is called an Exception.
+
+    >>> open('some_file_that_does_not_exist.txt')
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    IOError: [Errno 2] No such file or directory: 'some_file_that_does_not_exist.txt'
+
+There are many types of exceptions. Exceptions related to input/output fall under
+the category of `IOError`. Python determined the file did not exist and threw an
+`IOError` with a helpful error message. Unless we "catch" the exception, the
+program will abruptly terminate, which is almost never what we want to happen.
+
+The way you account for possible exceptions is through try-except blocks. Try
+except blocks have the following structure:
+
+    try:
+        Statement that may throw exception
+    except TheExceptionThatMightBeThrown:
+        What to do if the exception is thrown
+     
+For example,
+
+    >>> try:
+    ...     open('does_not_exist.txt')
+    ... except IOError:
+    ...     print("Sorry, the file provided does not exist")
+    ...
+    Sorry, the file provided does not exist
+
+Try to limit the code within the try block to only the relevant lines of code
+that may trigger the exception being thrown. Avoid this
+
+    try:
+        file_name = raw_input("What file would you like to open: ")
+        open(file_name)
+    except IOError:
+        print("Sorry, the file %s does not exist" % file_name)
+
+Do this instead
+
+    file_name = raw_input("What file would you like to open: ")
+    try:
+        open(file_name)
+    except IOError:
+        print("Sorry, the file %s" does not exist" % file_name)
+
+urllib2's urlopen method takes an optional timeout parameter. You can
+specify how many seconds you want to wait before an attempted connection is
+considered timed out. This is useful because sometimes web applications get stuck
+in infinite loops and never return information, which could lock up *your* program
+if you're waiting for it to return.
+
+We can test this using a utility called httpbin. If you visit
+[http://httpbin.org/delay/2](http://httpbin.org/delay/2) in your browser, it will
+delay for 2 seconds and then render information. If you replace 2 with 10, it will
+wait 10 seconds. 
+
+Here is an example of urllib2 throwing a timeout exception:
+
+    >>> import urllib2
+	>>> urllib2.urlopen("http://httpbin.org/delay/10", timeout=2)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	  File "C:\Python27\lib\urllib2.py", line 127, in urlopen
+	    return _opener.open(url, data, timeout)
+	  File "C:\Python27\lib\urllib2.py", line 404, in open
+	    response = self._open(req, data)
+	  File "C:\Python27\lib\urllib2.py", line 422, in _open
+	    '_open', req)
+	  File "C:\Python27\lib\urllib2.py", line 382, in _call_chain
+	    result = func(*args)
+	  File "C:\Python27\lib\urllib2.py", line 1214, in http_open
+	    return self.do_open(httplib.HTTPConnection, req)
+	  File "C:\Python27\lib\urllib2.py", line 1187, in do_open
+	    r = h.getresponse(buffering=True)
+	  File "C:\Python27\lib\httplib.py", line 1067, in getresponse
+	    response.begin()
+	  File "C:\Python27\lib\httplib.py", line 409, in begin
+	    version, status, reason = self._read_status()
+	  File "C:\Python27\lib\httplib.py", line 365, in _read_status
+	    line = self.fp.readline(_MAXLINE + 1)
+	  File "C:\Python27\lib\socket.py", line 476, in readline
+	    data = self._sock.recv(self._rbufsize)
+	socket.timeout: timed out
+
+To catch the exception, we need to import the socket library
+
+    >>> import socket
+	>>> try:
+	...     urllib2.urlopen("http://httpbin.org/delay/10", timeout=2)
+	... except socket.timeout:
+	...     print("Operation timed out!")
+	...
+	Operation timed out!
+
+Whenever you request a website from a server, it will send back a response code
+informing you about the nature of the response. These response codes can let us
+know if the server had a problem fulfilling our request. If a response code
+indicating failure is sent back, urllib2 throws an HTTPError
+
+	>>> urllib2.urlopen("http://google.com/some-page-that-does-not-exist")
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	  File "C:\Python27\lib\urllib2.py", line 127, in urlopen
+	    return _opener.open(url, data, timeout)
+	  File "C:\Python27\lib\urllib2.py", line 410, in open
+	    response = meth(req, response)
+	  File "C:\Python27\lib\urllib2.py", line 523, in http_response
+	    'http', request, response, code, msg, hdrs)
+	  File "C:\Python27\lib\urllib2.py", line 442, in error
+	    result = self._call_chain(*args)
+	  File "C:\Python27\lib\urllib2.py", line 382, in _call_chain
+	    result = func(*args)
+	  File "C:\Python27\lib\urllib2.py", line 629, in http_error_302
+	    return self.parent.open(new, timeout=req.timeout)
+	  File "C:\Python27\lib\urllib2.py", line 410, in open
+	    response = meth(req, response)
+	  File "C:\Python27\lib\urllib2.py", line 523, in http_response
+	    'http', request, response, code, msg, hdrs)
+	  File "C:\Python27\lib\urllib2.py", line 448, in error
+	    return self._call_chain(*args)
+	  File "C:\Python27\lib\urllib2.py", line 382, in _call_chain
+	    result = func(*args)
+	  File "C:\Python27\lib\urllib2.py", line 531, in http_error_default
+	    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+	urllib2.HTTPError: HTTP Error 404: Not Found
+
+You can use httpbin to emulate error codes. 200 is the code for 'OK', or no error.
+404 means the resource was not found. 500 means there was an application error.
+
+	>>> urllib2.urlopen("http://httpbin.org/status/200")
+	<addinfourl at 39465992L whose fp = <socket._fileobject object at 0x0000000002526E58>>
+	>>> urllib2.urlopen("http://httpbin.org/status/500")
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	  File "C:\Python27\lib\urllib2.py", line 127, in urlopen
+	    return _opener.open(url, data, timeout)
+	  File "C:\Python27\lib\urllib2.py", line 410, in open
+	    response = meth(req, response)
+	  File "C:\Python27\lib\urllib2.py", line 523, in http_response
+	    'http', request, response, code, msg, hdrs)
+	  File "C:\Python27\lib\urllib2.py", line 448, in error
+	    return self._call_chain(*args)
+	  File "C:\Python27\lib\urllib2.py", line 382, in _call_chain
+	    result = func(*args)
+	  File "C:\Python27\lib\urllib2.py", line 531, in http_error_default
+	    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+	urllib2.HTTPError: HTTP Error 500: INTERNAL SERVER ERROR
+
+You can catch multiple exceptions at one time:
+
+    except (Exception1, Exception2):
+
+### Problem 2
+
+Create a function called `is_website_status_ok` that takes a url and a timeout
+value as an argument. The function should return `True` if the website appears
+ok, and `False` if the page times out or if there is an error retrieving the page.
+
+### Problem 3
+
+Create a program which allows the user the enter a website url they want to monitor,
+and a 10 digit US phone number to text if the website seems to not respond correctly.
+Ask the user how often in seconds they want the script to check the website status.
+Do not let this number be smaller than 30 seconds.
+
+The program should be able to run forever assuming there is no errors reported. If the
+website does appear to go down, the program should send a text alert to the number
+provided by the user, and then the program should stop running.
+
+Here are some helper functions you should use in the assignment:
+
+	>>> def is_valid_us_phone(phone):
+	...     nums_only = "".join(c for c in phone if c.isdigit())
+	...     return len(nums_only) == 10
+	...
+	>>> is_valid_us_phone('9021317761')
+	True
+	>>> is_valid_us_phone('90313071')
+	False
+
+The following function will help emulate a website randomly going down. Pass in the
+normal url you want to check as an argument. 70% of the time the function will return
+the provided url. The other 30% it will return an httpbin url that results in a 500
+error code.
+
+	>>> def emulate_random_meltdown(url):
+	...     error_url = "http://httpbin.org/status/500"
+	...     from random import randint
+	...     i = randint(1,10)
+	...     if i <= 3:
+	...         return error_url
+	...     else:
+	...         return url
+	...
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://www.google.com/'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://httpbin.org/status/500'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://httpbin.org/status/500'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://www.google.com/'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://www.google.com/'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://www.google.com/'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://www.google.com/'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://www.google.com/'
+	>>> emulate_random_meltdown("http://www.google.com/")
+	'http://httpbin.org/status/500'
