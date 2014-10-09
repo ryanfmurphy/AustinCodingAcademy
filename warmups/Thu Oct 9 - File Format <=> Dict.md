@@ -31,7 +31,7 @@ So for example:
 
 ## Pair up and each pair choose at least 1 of the 2 options: 
 
-### 1) Reader/Parser
+### 1) Reader/Parser from File to Dictionary
 
 Write a function that reads the file "orders.txt" and puts the data in a list
 of dictionaries, each dictionary having the keys "name","product" and "cost".
@@ -43,7 +43,7 @@ The output if you fed in the above example would look like this:
         { 'name': Ashley 'Grundle', 'product': 'Beginner's Lego Kit', 'cost': 10.0 }
     ]
 
-### 2) Writer/Saver
+### 2) Writer/Saver from Dictionary to File
 
 Write a function that takes a list of dictionaries like the above, and writes
 it into a the file "orders.txt" in the format shown, with name, product, and
