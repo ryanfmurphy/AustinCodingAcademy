@@ -29,7 +29,7 @@ So for example:
     Beginner's Lego Kit
     10.0
 
-## Pair up and each pair choose 1 of the 2 options: 
+## Pair up and each pair choose at least 1 of the 2 options: 
 
 ### 1) Reader/Parser
 
