@@ -38,7 +38,7 @@ of dictionaries, each dictionary having the keys "name","product" and "cost".
 The output if you fed in the above example would look like this:
 
     [
-        { 'name': 'Joe Smith' 'product': 'Organic Chocolate Bar' 'cost': 5.0 },
+        { 'name': 'Joe Smith', 'product': 'Organic Chocolate Bar' 'cost': 5.0 },
         { 'name': 'Jill Meyer', 'product': 'Chemistry for Smart People', 'cost': 20.0 },
         { 'name': Ashley 'Grundle', 'product': 'Beginner's Lego Kit', 'cost': 10.0 }
     ]
