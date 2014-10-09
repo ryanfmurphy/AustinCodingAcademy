@@ -23,7 +23,7 @@ So for example:
     Organic Chocolate Bar
     5.0
     Jill Meyer
-    Chemistry for Smart People
+    "Chemistry for Smart People" Textbook
     20.0
     Ashley Grundle
     Beginner's Lego Kit
