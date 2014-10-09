@@ -43,7 +43,9 @@ The output if you fed in the above example would look like this:
     { 'name': Ashley 'Grundle', 'product': 'Beginner's Lego Kit', 'cost': 10.0 }
 ]
 
-### 2) Writer/Saver.  Write a function that takes a list of dictionaries like the above, and writes it
-into a the file "orders.txt" in the format shown, with name, product, and cost all each on their own
-line.
+### 2) Writer/Saver.
+
+Write a function that takes a list of dictionaries like the above, and writes
+it into a the file "orders.txt" in the format shown, with name, product, and
+cost all each on their own line.
 
