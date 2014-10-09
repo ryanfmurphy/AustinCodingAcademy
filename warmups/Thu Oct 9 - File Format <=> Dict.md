@@ -51,5 +51,8 @@ cost all each on their own line.
 
 ### Extra Credit
 
-You get extra credit if your functions are written in a way where it would be easy to add more fields to the file format.
+You get extra credit:
+
+1. if your functions are written in a way where it would be easy to add more fields to the file format.
+2. if you do parts (1) and (2) and put them together in a class.
 
