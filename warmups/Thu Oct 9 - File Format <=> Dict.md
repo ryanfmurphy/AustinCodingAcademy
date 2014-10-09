@@ -1,5 +1,5 @@
-Warm-up for class Thu Oct 9: 
-============================ 
+Warm-up for class Thu Oct 9: File Format <=> Dict
+=================================================
 
 Suppose you are building an e-commerce system, and you have a file called
 "orders.txt" that contains information about your customers' orders.
