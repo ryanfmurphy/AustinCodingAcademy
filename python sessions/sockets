@@ -1,0 +1,48 @@
+'''
+When you setup a socket to talk to another computer, there are 2 roles: bind and connect
+'''
+
+import socket
+S = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+S.bind(('192.168.1.whatever',PORT)) # whatever port you want as long as you both use the same one
+S.listen(1)
+(conn, remote) = S.accept()
+conn.send('Hello!!!!')
+# now if the other person does S.recv(1000) they will get the message
+conn.recv(1000)
+# it will wait until a message actually comes through the socket
+'Hey ryan, lets play a game'
+conn.send('Ok that sounds good')
+conn.recv(1000)
+'can you figure out who this is with code?'
+
+
+>>> import threading
+>>> conn.recv(1000)
+^CTraceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt
+>>> remote
+('192.168.2.205', 55529)
+>>> import subprocess
+>>> subprocess.Popen(['say','Hello there class'])
+<subprocess.Popen object at 0x10901a050>
+>>> conn.send("subprocess.Popen(['say','Hello there class'])")
+45
+>>> exec("subprocess.Popen(['say','Hello there class'])")
+>>> def listen_for_msgs():
+...     while True:
+...             print conn.recv(1000)
+... 
+>>> listen_for_msgs()
+pong
+^CTraceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in listen_for_msgs
+KeyboardInterrupt
+>>> T = threading.Thread(None, listen_for_msgs)
+>>> T.start()
+hello
+
+>>> 
+
