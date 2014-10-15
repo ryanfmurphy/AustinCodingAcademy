@@ -1,0 +1,13 @@
+body {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.snippet {
+    background: #eee;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
