@@ -55,6 +55,12 @@ and Products(s).
         If there's already a Person with that name,
         assume it's the same Person and don't make a redundant one.
 
+            (Note: I added a default value of "None" to some of the parameters,
+            like age, street_address and bank_balance.  This is so you can
+            create Person objects without having to specify these data
+            since we have no way of knowing what the age / bank_balance
+            would be just by reading the file)
+
         Every time there is a new Product mentioned, create a new
         Product object with the corresponding Price.  If that product
         name has already been mentioned, no need to create a new
@@ -78,7 +84,7 @@ connected together?
 
 class Person:
     
-    def __init__(self, name, age, street_address=None, bank_balance=None):
+    def __init__(self, name, age=None, street_address=None, bank_balance=None):
         """
         Create a new person
         :param string name: Person's full name
