@@ -17,7 +17,7 @@ a file format for the Orders/People/Products:
     https://github.com/ryanfmurphy/AustinCodingAcademy/tree/master/warmups/thu-oct-9-file-format-2-dicts.md
 
 
-Now we will be taking those functions and adding them to this file,
+Now we will be taking those functionalities and adding them to this file,
 and using them in a way that plays nicely with the classes we've created.
 
 If you have your working solutions from that day, use those!
@@ -29,8 +29,9 @@ But if you need to you can use the solutions posted here:
 1) Import or copy the 2 functions file2dicts() and dicts2file() from
 the Oct 9th Warmup into this file.  You may either copy the functions
 directly into this file or use an import to gain access to those
-functions from within this file.  Create an example file to read from
-and verify that the 2 functions work.
+functions from within this file.  Create an example file to read the
+order data from, and verify that the 2 functions work.
+
 
 2) Create a function read_order_data_from_file() which uses the
 file2dicts() function to read the "orders.txt" file, then takes the
@@ -63,6 +64,10 @@ and Products(s).
         If a Person buys more than one Product (or the same one
         multiple times) then add all their purchases to the same
         Order.
+
+    2c) Return your finished result from the function, so that you and
+        others can call the function and get the corresponding data.
+
 
 3) Use your read_order_data_from_file() function to create all the
 proper Objects, and then print out your results.  What Person objects
