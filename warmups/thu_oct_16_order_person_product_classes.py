@@ -154,6 +154,7 @@ class Order:
 
 
 if __name__ == "__main__":
+    """ Commenting this out so you guys can have a fresh start.
     shopper = Person('Samir', 30, '5421 Hickory Dr')
 
     firstProduct = Product('Nike Shox', 'Shoes', 54.99)
@@ -168,4 +169,5 @@ if __name__ == "__main__":
     newOrder = Order(shopper, products)
     newOrder.add_product(fourthProduct)
     newOrder.place_order()
+    """
 
