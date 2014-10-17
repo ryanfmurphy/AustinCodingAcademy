@@ -5,6 +5,24 @@
     <body>
         <h1>Welcome to my Blog!</h1>
 
+        <div style="border:1px solid black; padding: 10px;">
+
+            {% if is_logged_in %}
+                You are logged in
+                <input type="button" value="logout"/>
+            {% else %}
+                <form action="/login" method="post">
+                    Username: <input type="text" name="username" size="12"/>
+                    &nbsp;
+                    Password: <input type="text" name="passwd" size="12"/>
+                    &nbsp;
+                    <input type="submit" value="Login"/>
+                </form>
+            {% endif %}
+
+
+        </div>
+
         <div class="snippet">
             <h2>ACL Weekend</h2>
             <p>The last couple years especially ACL has seemed really hectic to me.  Awesome but hectic...</p>
