@@ -109,6 +109,9 @@ class Person:
             return True
         else:
             return False
+    
+    def __repr__(self):
+        return '<Person "' + self.person_name + '">'
 
 class Product:
     def __init__(self, product_name, product_price, product_category=None):
@@ -162,6 +165,9 @@ class Order:
         self.listOfProducts.append(new_product)
         return self
     
+    def __repr__(self): # string representation of an Order object
+        return '<Order for ' + self.ObjPerson.person_name + ' consisting of ' + str(self.listOfProducts) + '>'
+        
 
 def file2dicts():
     with open('orders.txt') as fh:
@@ -218,5 +224,5 @@ def read_order_data_from_file():
     return results
 
 data = read_order_data_from_file()
-        
+pprint(data)        
 
