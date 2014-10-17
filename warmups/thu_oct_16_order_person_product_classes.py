@@ -96,6 +96,7 @@ class Person:
         self.age = age
         self.street_address = street_address
         self.bank_balance = bank_balance
+        print "Just created a new person! " + self.person_name
 
     # Getters: very polite
     def get_address(self):  return self.street_address
@@ -123,6 +124,9 @@ class Product:
         # This gives us the product price
         # and takes the discount into consideration.
         return self.product_price - self.discount_amount
+    
+    def __repr__(self):
+        return '<Product called "' + self.product_name + '" costing $' + str(self.product_price) + '>'
 
 
 class Order:
@@ -157,24 +161,62 @@ class Order:
     def add_product(self, new_product):
         self.listOfProducts.append(new_product)
         return self
+    
+
+def file2dicts():
+    with open('orders.txt') as fh:
+        raw_text = fh.read().strip() # strip is important to get rid of the last newline
+        lines = raw_text.split('\n')
+        names = lines[::3] # every 3rd line
+        products = lines[1::3] # every 3rd line starting with the 2nd line
+        costs = lines[2::3] # every 3rd line starting with the 3nd line
+        results = []
+        for i in range(len(names)):
+            results.append({'name':names[i], 'product':products[i], 'cost':float(costs[i])})
+        return results
+
+from pprint import pprint
 
 
 """
-# Commenting this out so you guys can have a fresh start.
-if __name__ == "__main__":
-    shopper = Person('Samir', 30, '5421 Hickory Dr')
-
-    firstProduct = Product('Nike Shox', 'Shoes', 54.99)
-    firstProduct.set_discount(5.00)  # This is called a setter : ) please use me ^_^
-
-    secondProduct = Product('MacBook Pro', 'Laptop', 1450.00)
-    thirdProduct = Product('Keyboard', 'Laptop', 15.00)
-
-    # Put these products in a list
-    products = [firstProduct, secondProduct, thirdProduct]
-
-    newOrder = Order(shopper, products)
-    newOrder.add_product(fourthProduct)
-    newOrder.place_order()
+2) Create a function read_order_data_from_file() which uses the
+file2dicts() function to read the "orders.txt" file, then takes the
+resulting list of dicts and creates any relevant Order(s), Person(s)
+and Products(s).
 """
+
+def read_order_data_from_file():
+    order_info = file2dicts() # a list of things like {'cost': 10000.0, 'name': 'Joe Smith', 'product': 'John Deere Tractor'}
+    people_by_name = {}
+    products_by_name = {}
+    orders_by_person_name = {}
+    
+    for order_item in order_info:
+        
+        name = order_item['name']
+        if name not in people_by_name: # check if the person already exists
+            people_by_name[name] = Person(name)
+        person = people_by_name[name]
+        
+        product_name = order_item['product']
+        if product_name not in products_by_name:
+            products_by_name[ product_name ] = Product(product_name, order_item['cost'])
+        product = products_by_name[ product_name ]
+        
+        if name in orders_by_person_name:
+            # add product to existing order
+            orders_by_person_name[name].add_product(product)
+        else:
+            # create new order
+            orders_by_person_name[name] = Order(person, [product])
+    
+    results = {
+        'people': people_by_name.values(),
+        'products': products_by_name.values(),
+        'orders': orders_by_person_name.values()
+    }
+    return results
+
+data = read_order_data_from_file()
+        
 

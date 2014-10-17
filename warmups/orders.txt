@@ -13,3 +13,6 @@ Yoga Video
 Mary Williams
 Leather Sofa
 500.0
+Gabriel Marquez
+Leather Sofa
+500.0
