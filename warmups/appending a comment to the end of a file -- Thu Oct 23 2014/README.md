@@ -1,6 +1,10 @@
 Adding a comment to the end of a file
 =====================================
-Here's a bash script that adds a text remark to the end of a text-based file.
+Below is a script in the bash scripting language that adds a text remark to the end of a text-based file.
+
+Your goal is to write Python code that does the same thing.
+
+Don't worry if you don't understand this Bash code.  The Description of Behavior section will tell you everything you need to know.  Also, it may help to try executing the script to see what it does.
 
 
 Usage
@@ -30,7 +34,6 @@ Limitations
 
 Bash Code
 ---------
-Don't worry if you don't understand this Bash code.  Your goal is to write Python code that does follows the "Descriptiong of Behavior".
 ```
 #!/bin/bash
 
