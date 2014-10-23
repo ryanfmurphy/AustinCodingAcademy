@@ -1,6 +1,6 @@
-Introducing: add_comment - a simple script written in the bash scripting language
-=================================================================================
-Adds a text remark to the end of a text-based file.
+Adding a comment to the end of a file
+=====================================
+Here's a bash script that adds a text remark to the end of a text-based file.
 
 
 Usage
