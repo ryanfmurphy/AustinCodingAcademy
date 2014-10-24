@@ -1,26 +1,31 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
     <body>
-        <h1>Welcome to my Blog!</h1>
+       <h1>Welcome to ACAShop</h1>
+       {{  sess  }}
+        Your name is :: {{ sess['name'] }}
+        Your address is :: {{ sess['address']}}
+        <form name="myForm" action="/person" method="post">
+            Name: <input type="text" name="name" size="12" />
+            <br>
+            Address: <input type="text" name="address" size="12" />
+            <br/><!-- This is how you make a line break in HTML -->
+            <input type="submit" value="Click Me" />
 
-        <div class="snippet">
-            <h2>ACL Weekend</h2>
-            <p>The last couple years especially ACL has seemed really hectic to me.  Awesome but hectic...</p>
-            <a href="/acl-weekend">Read more</a>
-        </div>
+        </form>
 
-        <div class="snippet">
-            <h2>Trip to New York for Circle Songs Workshop</h2>
-            <p>Lorem ipsum...</p>
-            <a href="/acl-weekend">Read more</a>
-        </div>
+        <form name="myForm" action="/product" method="post">
+            Product: <input type="text" name="product_name" size="12" />
+            <br/><!-- This is how you make a line break in HTML -->
+            Product category: <input type="text" name="product_cat" size="12" />
+            <br/><!-- This is how you make a line break in HTML -->
+            Price: <input type="text" name="product_price" size="12" />
+            <br/><!-- This is how you make a line break in HTML -->
+            <input type="submit" value="Click Me" />
+        </form>
 
-        <div class="snippet">
-            <h2>Learned how to use Dictionaries in Python</h2>
-            <p>Sometimes you just have one of those "aha" moments...</p>
-            <a href="/acl-weekend">Read more</a>
-        </div>
+
     </body>
 </html>
