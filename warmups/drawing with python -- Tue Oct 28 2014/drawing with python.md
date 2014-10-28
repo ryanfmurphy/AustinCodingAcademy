@@ -25,6 +25,7 @@ setheading(0)        # go back to default angle
 
 ### Exercises ###
 
+* First just play around with the turtle to get a feel for how it works.  You can see the complete documentation (here)[https://docs.python.org/2/library/turtle.html#turtle.mode].
 * Figure out how to draw a square with the turle.
 * Instead of a square, how would you draw an octagon?  How about a circle?
 
