@@ -17,15 +17,25 @@ def post_msg(me,friends,msg):
         num = friends[friend]
         send_text_msg(num, me['name'] + ': ' + msg)
 
+master_log = []
+
 @app.route('/', methods=['GET','POST'])
 def index():
+    global master_log
     if request.method == 'POST':
+        master_log.append({'me': json.loads(request.form['me']),
+                           'friends': json.loads(request.form['friends']),
+                           'msg': request.form['msg']})
         post_msg(   json.loads(request.form['me']),
                     json.loads(request.form['friends']),
                     request.form['msg'])
         return "Sending message..."
     else:
         return "You just did a GET.  Congrats!"
+
+@app.route('/admin')
+def admin():
+    return str(master_log)
 
 if __name__ == "__main__":
     app.run('0.0.0.0', debug=True)
