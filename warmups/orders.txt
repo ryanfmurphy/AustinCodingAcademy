@@ -1,0 +1,18 @@
+Joe Smith
+John Deere Tractor
+10000.0
+Mark Hayden
+Bag of Coffee Beans
+10.0
+Joe Smith
+Chemistry Book
+50.0
+Mary Williams
+Yoga Video
+15.0
+Mary Williams
+Leather Sofa
+500.0
+Gabriel Marquez
+Leather Sofa
+500.0

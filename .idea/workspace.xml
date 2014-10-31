@@ -2,40 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f90e1bb-c598-42b8-9bf8-8e6bae412826" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/add_comment.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/text.txt" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\Brief Python Review - Tue Sep 16.rtf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\Helpful Links" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\examples\webpage.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\assignment-1.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\assignment-2.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\assignment-3.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw1\conceptual.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw1\program1.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw1\program2.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw1\program3.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw1\program4.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw1\program5.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\conceptual.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\hw2_ex1.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\hw2_ex2_partial.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\hw2_ex3_partial.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\joe_prob1.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\joe_prob2.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\joe_prob3.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\joe_prob4.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\test_results.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\homework\solutions\hw2\zigzag.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\python sessions\Thu Sept 11 2014.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\python sessions\Thu-Sep-25:dictionaries,looping,counts,input" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\python sessions\Tue Sep 23 2014" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\python sessions\Tue Sep 9" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\python sessions\sockets" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\warmups\Thu Oct 9 - File Format &lt;=&gt; Dict.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\warmups\solutions\thu_oct_9_solution.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/appending a comment to the end of a file -- Thu Oct 23 2014/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/appending a comment to the end of a file -- Thu Oct 23 2014/add_comment" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/drawingExample.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example 2/flask_example.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example 2/templates/hello.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example/templates/hello.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example 2/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/orders.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example 2/templates/person.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example 2/templates/product.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example 2/templates/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/thu_oct_16_order_person_product_classes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/tue-oct-21.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/flask example/tue_oct_14_order_person_product_classes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warmups/solutions/tue_oct_14_solution.py" />
+      <change type="DELETED" beforePath="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\warmups\ekjkdhfkejre" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/flask example/templates/style.css" afterPath="$PROJECT_DIR$/examples/flask example/templates/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warmups/thu-oct-9-file-format-2-dicts.md" afterPath="$PROJECT_DIR$/warmups/thu-oct-9-file-format-2-dicts.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warmups/add_comment.py" afterPath="$PROJECT_DIR$/warmups/add_comment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/flask example/flask_example.py" afterPath="$PROJECT_DIR$/examples/flask example/flask_example.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/flask example/templates/index.html" afterPath="$PROJECT_DIR$/examples/flask example/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warmups/text.txt" afterPath="$PROJECT_DIR$/warmups/text.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AustinCodingAcademy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,41 +50,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/flask example/templates/index.html">
+      <file leaf-file-name="leapYear.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/warmups/leapYear.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="629">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="561">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flask_example.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/flask example/flask_example.py">
+      <file leaf-file-name="flask_example.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/flask example 2/flask_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_comment.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/warmups/add_comment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/warmups/text.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33552632" vertical-offset="0" max-vertical-offset="608">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,10 +85,14 @@
       <list>
         <option value="$PROJECT_DIR$/examples/flask_project_1/index.html" />
         <option value="$PROJECT_DIR$/examples/flask example/templates/person.html" />
-        <option value="$PROJECT_DIR$/examples/flask example/templates/index.html" />
-        <option value="$PROJECT_DIR$/examples/flask example/flask_example.py" />
-        <option value="$PROJECT_DIR$/warmups/add_comment.py" />
         <option value="$PROJECT_DIR$/warmups/text.txt" />
+        <option value="$PROJECT_DIR$/warmups/add_comment.py" />
+        <option value="$PROJECT_DIR$/warmups/tue_oct_14_order_person_product_classes.py" />
+        <option value="$PROJECT_DIR$/examples/flask example/templates/index.html" />
+        <option value="$PROJECT_DIR$/examples/flask example/tue_oct_14_order_person_product_classes.py" />
+        <option value="$PROJECT_DIR$/examples/flask example/flask_example.py" />
+        <option value="$PROJECT_DIR$/warmups/drawingExample.py" />
+        <option value="$PROJECT_DIR$/warmups/leapYear.py" />
       </list>
     </option>
   </component>
@@ -184,6 +160,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AustinCodingAcademy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AustinCodingAcademy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AustinCodingAcademy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AustinCodingAcademy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask example 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AustinCodingAcademy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AustinCodingAcademy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -192,8 +218,57 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager">
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brewbacca\vagrant\pyVagrant\repos\AustinCodingAcademy\examples\flask example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.leapYear">
+    <configuration default="false" name="drawingExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warmups" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AustinCodingAcademy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/warmups/drawingExample.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="leapYear" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warmups" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AustinCodingAcademy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/warmups/leapYear.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -315,7 +390,16 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.drawingExample" />
+      <item index="1" class="java.lang.String" itemvalue="Python.leapYear" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.leapYear" />
+        <item index="1" class="java.lang.String" itemvalue="Python.drawingExample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -338,10 +422,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23499268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -372,11 +456,99 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/warmups/drawingExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1649">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/thu_oct_16_order_person_product_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="3978">
+          <caret line="113" column="52" selection-start-line="106" selection-start-column="4" selection-end-line="113" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/flask_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="676" max-vertical-offset="1445">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/drawingExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1649">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/drawingExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1131" max-vertical-offset="1598">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/flask_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1462">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/tue_oct_14_order_person_product_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="477" max-vertical-offset="2261">
+          <caret line="49" column="0" selection-start-line="44" selection-start-column="6" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/thu_oct_16_order_person_product_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3978">
+          <caret line="113" column="52" selection-start-line="106" selection-start-column="4" selection-end-line="113" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/add_comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/templates/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="442">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/flask example/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -384,7 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="833">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -392,7 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -400,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="799">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -408,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="714">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -416,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -424,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="799">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -432,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="714">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -448,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -456,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="799">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,50 +657,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/flask example/templates/style.css">
+    <entry file="file://$PROJECT_DIR$/warmups/solutions/thu_oct_9_solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="535">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/thu-oct-9-file-format-2-dicts.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/tue_oct_14_order_person_product_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="477" max-vertical-offset="2261">
+          <caret line="49" column="0" selection-start-line="44" selection-start-column="6" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/add_comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6974359" vertical-offset="0" max-vertical-offset="585">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/flask example/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="629">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state vertical-scroll-proportion="-13.884615" vertical-offset="64" max-vertical-offset="646">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flask example/templates/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="535">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmups/drawingExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1649">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warmups/solutions/thu_oct_9_solution.py">
+    <entry file="file://$PROJECT_DIR$/warmups/thu_oct_16_order_person_product_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="3978">
+          <caret line="113" column="52" selection-start-line="106" selection-start-column="4" selection-end-line="113" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/flask example/flask_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="833">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="676" max-vertical-offset="1445">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warmups/add_comment.py">
+    <entry file="file://$PROJECT_DIR$/warmups/leapYear.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="561">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warmups/text.txt">
+    <entry file="file://$PROJECT_DIR$/examples/flask example 2/flask_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33552632" vertical-offset="0" max-vertical-offset="608">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

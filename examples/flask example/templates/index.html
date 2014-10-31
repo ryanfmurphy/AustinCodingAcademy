@@ -7,6 +7,7 @@
        {{  sess  }}
         Your name is :: {{ sess['name'] }}
         Your address is :: {{ sess['address']}}
+
         <form name="myForm" action="/person" method="post">
             Name: <input type="text" name="name" size="12" />
             <br>
@@ -23,8 +24,8 @@
             <br/><!-- This is how you make a line break in HTML -->
             Price: <input type="text" name="product_price" size="12" />
             <br/><!-- This is how you make a line break in HTML -->
-            <input type="submit" value="Click Me" />
         </form>
+
 
 
     </body>
