@@ -11,13 +11,12 @@ conn = MySQLdb.connect(host='acadb.cz0wsfs6bppg.us-west-2.rds.amazonaws.com',
 # Acquire a cursor to operate on this connection with MySQL
 cur = conn.cursor()
 
-select_query = 'SELECT * FROM product'
+select_query = 'SELECT * FROM person order by person_name DESC;'
 cur.execute(select_query)
-products = cur.fetchall()
+people = cur.fetchall()
 
-# Loop through each returned row and print it to screen nicely
-for product in products:
-    pprint(product)
+for person in people:
+    print person['person_name']
 
 
 # Commit this whole transaction to MySQL atomically. If any one statement fails, everything fails.
