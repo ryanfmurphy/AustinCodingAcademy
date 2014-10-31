@@ -17,6 +17,13 @@ def index():
 def person():
     return render_template('person.html')
 
+@app.route('/save_person',  methods=['POST'])
+def save_person():
+    name = request.form['name']
+    address = request.form['address']
+    return "Name: %s, Address: %s" % (name, address)
+
+
 @app.route("/product")
 def product():
     return render_template('product.html')
