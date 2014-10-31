@@ -31,14 +31,14 @@ Hint: You can use `ord()` to convert a character into it's corresponding ASCII n
 
 ### Example ###
 ```python
-chr('a') # => 97
-ord(97) # => 'a'
+ord('a') # => 97
+chr(97) # => 'a'
 
-chr('b') # => 98
-ord(98) # => 'b'
+ord('b') # => 98
+chr(98) # => 'b'
 
-chr('c') # => 99
-ord(99) # => 'c'
+ord('c') # => 99
+chr(99) # => 'c'
 ```
 
 Now use your `shift_letters()` function to figure out the answer to this riddle:
