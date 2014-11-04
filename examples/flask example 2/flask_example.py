@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, session, Response
+import MySQLdb
+
 
 app = Flask(__name__)
 app.config.from_object(__name__)
