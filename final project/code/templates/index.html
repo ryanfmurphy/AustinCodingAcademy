@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css" type="text/css">
+    </head>
+    <body>
+        <h1>Welcome to ACA Shop</h1>
+    </body>
+</html>
+
+        {#
+            {% if is_logged_in %}
+                You are logged in
+                <input type="button" value="logout"/>
+            {% else %}
+                <form action="/login" method="post">
+                    Username: <input type="text" name="username" size="12"/>
+                    &nbsp;
+                    Password: <input type="text" name="passwd" size="12"/>
+                    &nbsp;
+                    <input type="submit" value="Login"/>
+                </form>
+            {% endif %}
+        #}
