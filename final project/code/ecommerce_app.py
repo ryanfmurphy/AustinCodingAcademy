@@ -1,19 +1,24 @@
+# import the functionalities we need
 from flask import Flask, render_template, request, session, Response
 import MySQLdb
 import MySQLdb.cursors
 from pprint import pprint
 
+# set up the app
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.secret_key = 'mon_key'
 
 
 @app.route("/")
+# each of these functions with "@app.route" is a route for a different URL that can be traveled to
 def index():
     if session and session['is_logged_in'] == 'Yes':
         is_logged_in = True
     else:
         is_logged_in = False
+    # each time you see render_template('somefile.html') at the end of a route,
+    # it means to render that .html template from the templates folder
     return render_template('index.html', is_logged_in=is_logged_in)
 
 @app.route("/person")
