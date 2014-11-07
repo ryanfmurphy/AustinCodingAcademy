@@ -1,6 +1,3 @@
-# this is version 1
-# there's also a version 2 and it's mostly the same
-
 def leap_year(year):
     # if it is div by 4, then is a leap_year
     #   EXCEPT if div by 100, then not a leap_year
@@ -25,4 +22,7 @@ def shift_letters(msg, n):
     chars = [chr(n) for n in numbers]
     # put that back into a string a return it
     return ''.join(chars)
+
+# this is version 2
+# it has differences
 
