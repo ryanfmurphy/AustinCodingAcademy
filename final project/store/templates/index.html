@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css" type="text/css">
+    </head>
+    <body>
+
+        <h1>Welcome to My Store</h1>
+
+        <form name="loginForm" action="/do_login" method="post">
+            Username: <input type="text" name="my_username"/> &nbsp;
+            Password: <input type="password" name="my_password"/> &nbsp;
+            <input type="submit" value="Login"/>
+        </form>
+
+        <hr/>
+
+        <h2>Our Products</h2>
+
+        <hr/>
+
+        <table border="1">
+        {% for prod in all_products %}
+            <tr>
+                <!-- Product image -->
+                <td>
+                    <img src="{{ prod.image }}" height="200" width="200"/>
+                </td>
+                <td valign="top">
+                    <h3>{{  prod.name }}</h3>
+                    {{ prod.description }}
+                    <br/>
+                    <br/>
+                    <h4>Price: $ {{ prod.price }}</h4>
+                </td>
+                <td>
+                   <form name="addCartForm" action="/add_cart" method="post">
+                       <input type="hidden" nam="product_id" value="{{ prod.product_id }}"/>
+
+                       Quantity: <select name="quantity">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                       </select>
+
+                       <br/><br/>
+                       <input type="submit" value="Add to Cart" style="font-size:1.2em; background-color:#c0c0ff;"/>
+                   </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+
+    </body>
+</html>
