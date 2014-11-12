@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, session, Response
+import MySQLdb
 import MySQLdb.cursors
+from pprint import pprint
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -23,7 +25,6 @@ def save_person():
 
     name = request.form['name']
     address = request.form['address']
-    bankbalance = request.form['bankbalance']
 
     # Create a connection object by calling the connect() method on MySQLdb
     conn = MySQLdb.connect(host='acadb.cz0wsfs6bppg.us-west-2.rds.amazonaws.com',
@@ -45,7 +46,7 @@ def save_person():
 
     conn.commit()
 
-    return "<h3 style=\"#c0c0ff;\">Name: %s, Address: %s,Bank Balance: %s  has been inserted into the database</h3>" % (name, address, bankbalance)
+    return "<h3 style=\"#c0c0ff;\">Name: %s, Address: %s has been inserted into the database</h3>" % (name, address)
 
 
 @app.route("/product")
