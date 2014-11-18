@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <title></title>
+</head>
+<body>
+    <h1>Your invoice.</h1>
+        <!--{{ prod_list }}-->
+
+    <table border="1">
+        {% for prod in prod_list %}
+
+            <tr>
+
+                <td>
+                    <h7>Name: {{  prod.product.name }}</h7>
+                </td>
+                <td>
+                    <h7>Price: ${{  prod.product.price}}</h7>
+                </td>
+                <td>
+                    <h7>Quantity: {{  prod.quantity  }}</h7>
+                </td>
+
+            </tr>
+        {% endfor %}
+        </table>
+        <table border="1">
+        <tr>
+            <td>
+                <h7>Your total: ${{  order_total  }}</h7>
+            </td>
+        </tr>
+            </table>
+</body>
+</html>

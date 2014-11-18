@@ -23,6 +23,8 @@ class Database():
         return results
 
 
+
+
 class Product():
     def __init__(self):
         self.db = Database()

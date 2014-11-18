@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <title></title>
+</head>
+<body>
+    <h1>Your cart.</h1>
+        <!--{{ prod_list }}-->
+
+    <table border="1">
+        {% for prod in prod_list %}
+            <tr>
+             <td>
+                <img src="{{ prod.product.image }}" height="200" width="200"/>
+                </td>
+                <td valign="top">
+                    <h3>{{  prod.product.name }}</h3>
+                    {{ prod.product.description }}
+                    <br/>
+                    <br/>
+                    <h4>Price: $ {{ prod.product.price }}</h4>
+                    <br/>
+                    <h4>Quantity: {{ prod.quantity }}</h4>
+                </td>
+                <td>
+                    <form action = "/delete_cart" method = "post">
+                        <input type="hidden" value="{{ prod.product_id }}" name="product_id">
+                        <input type="submit" value="delete">
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+        <br>
+        <p><b>Press button if you're ready to check out.</b></p>
+        <form action="/checkout" method="post">
+            <input type="submit" value="Checkout">
+        </form>
+</body>
+</html>
